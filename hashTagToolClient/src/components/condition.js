@@ -3,6 +3,7 @@ import { CSVLink, CSVDownload } from "react-csv";
 
 const Condition =(props)=>{
     var arr = props.data
+    console.log(props)
     var final = []
     
     if(arr.length!=0){

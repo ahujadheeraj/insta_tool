@@ -13,12 +13,15 @@ ReactDOM.render(
     <div>
     <BrowserRouter>
         <div>
-              <Route path='/' component={App} />
+            <Route path='/' component={App} />
+            <Route path='/tools' component={Tools} />
+
+              {/* 
               <Route path='/blog' component={Blog} />
               <Route path='/services' component={Services} />
-              <Route path='/tools' component={Tools} />
               <Route path='/contact' component={Contact} />
-              <Route path='/newsletter' component={Newsletter} />
+<Route path='/newsletter' component={Newsletter} />*/}
+              
         </div>
     </BrowserRouter>
     </div>,

@@ -1,7 +1,17 @@
 module.exports = (app) => {
 const data = require('../Data/index.js')
+const tool_table = require('../Data/newhashTagdata.json');
+
+var cors = require('cors')
+
+app.use(cors())
 
 
+app.get('/tool',(req,res)=>{
+  console.log("hey requested at /tool");
+  res.json(tool_table)
+  console.log(res.json);
+})
 
 app.get('/:nicheID', (req,res) => {
   const result= req.params.nicheID

@@ -1,0 +1,254 @@
+ [
+        {
+            "category": "fashion",
+            "influencer": "user1",
+            "Influ_desc": "user1",
+            "hashtag": "user11",
+            "freq": "most"
+        },
+        {
+            "category": "fashion",
+            "influencer": "user1",
+            "Influ_desc": "user1",
+            "hashtag": "user12",
+            "freq": "often"
+        },
+        {
+            "category": "fashion",
+            "influencer": "user1",
+            "Influ_desc": "user1",
+            "hashtag": "user13",
+            "freq": "rarely"
+        },
+        {
+            "category": "travel",
+            "influencer": "user2",
+            "Influ_desc": "user2",
+            "hashtag": "user24",
+            "freq": "most"
+        },
+        {
+            "category": "travel",
+            "influencer": "user2",
+            "Influ_desc": "user2",
+            "hashtag": "user25",
+            "freq": "often"
+        },
+        {
+            "category": "travel",
+            "influencer": "user2",
+            "Influ_desc": "user2",
+            "hashtag": "user26",
+            "freq": "rarely"
+        },
+        {
+            "category": "fitness",
+            "influencer": "user3",
+            "Influ_desc": "user3",
+            "hashtag": "user37",
+            "freq": "most"
+        },
+        {
+            "category": "fitness",
+            "influencer": "user3",
+            "Influ_desc": "user3",
+            "hashtag": "user38",
+            "freq": "often"
+        },
+        {
+            "category": "fitness",
+            "influencer": "user3",
+            "Influ_desc": "user3",
+            "hashtag": "user39",
+            "freq": "rarely"
+        },
+        {
+            "category": "art",
+            "influencer": "user4",
+            "Influ_desc": "user4",
+            "hashtag": "user410",
+            "freq": "most"
+        },
+        {
+            "category": "art",
+            "influencer": "user4",
+            "Influ_desc": "user4",
+            "hashtag": "user411",
+            "freq": "often"
+        },
+        {
+            "category": "art",
+            "influencer": "user4",
+            "Influ_desc": "user4",
+            "hashtag": "user412",
+            "freq": "rarely"
+        },
+        {
+            "category": "finance",
+            "influencer": "user5",
+            "Influ_desc": "user5",
+            "hashtag": "user513",
+            "freq": "most"
+        },
+        {
+            "category": "finance",
+            "influencer": "user5",
+            "Influ_desc": "user5",
+            "hashtag": "user514",
+            "freq": "often"
+        },
+        {
+            "category": "finance",
+            "influencer": "user5",
+            "Influ_desc": "user5",
+            "hashtag": "user515",
+            "freq": "rarely"
+        },
+        {
+            "category": "apparels",
+            "influencer": "user6",
+            "Influ_desc": "user6",
+            "hashtag": "user616",
+            "freq": "most"
+        },
+        {
+            "category": "apparels",
+            "influencer": "user6",
+            "Influ_desc": "user6",
+            "hashtag": "user617",
+            "freq": "often"
+        },
+        {
+            "category": "apparels",
+            "influencer": "user6",
+            "Influ_desc": "user6",
+            "hashtag": "user618",
+            "freq": "rarely"
+        },
+        {
+            "category": "accessories",
+            "influencer": "user7",
+            "Influ_desc": "user7",
+            "hashtag": "user719",
+            "freq": "most"
+        },
+        {
+            "category": "accessories",
+            "influencer": "user7",
+            "Influ_desc": "user7",
+            "hashtag": "user720",
+            "freq": "often"
+        },
+        {
+            "category": "accessories",
+            "influencer": "user7",
+            "Influ_desc": "user7",
+            "hashtag": "user721",
+            "freq": "rarely"
+        },
+        {
+            "category": "Sports",
+            "influencer": "user8",
+            "Influ_desc": "user8",
+            "hashtag": "user822",
+            "freq": "most"
+        },
+        {
+            "category": "Sports",
+            "influencer": "user8",
+            "Influ_desc": "user8",
+            "hashtag": "user823",
+            "freq": "often"
+        },
+        {
+            "category": "Sports",
+            "influencer": "user8",
+            "Influ_desc": "user8",
+            "hashtag": "user824",
+            "freq": "rarely"
+        },
+        {
+            "category": "Music",
+            "influencer": "user9",
+            "Influ_desc": "user9",
+            "hashtag": "user925",
+            "freq": "most"
+        },
+        {
+            "category": "Music",
+            "influencer": "user9",
+            "Influ_desc": "user9",
+            "hashtag": "user926",
+            "freq": "often"
+        },
+        {
+            "category": "Music",
+            "influencer": "user9",
+            "Influ_desc": "user9",
+            "hashtag": "user927",
+            "freq": "rarely"
+        },
+        {
+            "category": "Shopping",
+            "influencer": "user10",
+            "Influ_desc": "user10",
+            "hashtag": "user1028",
+            "freq": "most"
+        },
+        {
+            "category": "Shopping",
+            "influencer": "user10",
+            "Influ_desc": "user10",
+            "hashtag": "user1029",
+            "freq": "often"
+        },
+        {
+            "category": "Shopping",
+            "influencer": "user10",
+            "Influ_desc": "user10",
+            "hashtag": "user1030",
+            "freq": "rarely"
+        },
+        {
+            "category": "Lifestyle",
+            "influencer": "user11",
+            "Influ_desc": "user11",
+            "hashtag": "user1131",
+            "freq": "most"
+        },
+        {
+            "category": "Lifestyle",
+            "influencer": "user11",
+            "Influ_desc": "user11",
+            "hashtag": "user1132",
+            "freq": "often"
+        },
+        {
+            "category": "Lifestyle",
+            "influencer": "user11",
+            "Influ_desc": "user11",
+            "hashtag": "user1133",
+            "freq": "rarely"
+        },
+        {
+            "category": "Marketing",
+            "influencer": "user12",
+            "Influ_desc": "user12",
+            "hashtag": "user1234",
+            "freq": "most"
+        },
+        {
+            "category": "Marketing",
+            "influencer": "user12",
+            "Influ_desc": "user12",
+            "hashtag": "user1235",
+            "freq": "often"
+        },
+        {
+            "category": "Marketing",
+            "influencer": "user12",
+            "Influ_desc": "user12",
+            "hashtag": "user1236",
+            "freq": "rarely"
+        }
+    ]

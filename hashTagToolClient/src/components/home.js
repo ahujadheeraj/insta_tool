@@ -7,6 +7,8 @@ import Zoom from 'react-reveal/Zoom';
 import { CSVLink, CSVDownload } from "react-csv";
 import Autosuggest from 'react-autosuggest';
 import Condition from './condition'
+import axios from 'axios';
+
 
 import { MdContacts,MdAllInclusive,MdDashboard,MdViewCarousel,MdWbIridescent } from "react-icons/md";
 
@@ -112,15 +114,12 @@ class Home extends Component {
   componentDidMount(){
     console.log("component did mount!!!");
     console.log(this.state)
-    fetch('http://localhost:5000/')
+
+    //fetch('http://localhost:5000/')
+    axios.get('3.233.117.183:5000/')
     .then((res)=>
-      res.json())
-      .then(json => {
-        dat = json;
-    }
-
-    ).catch((err)=>console.log(err))
-
+      dat = res.data,
+      console.log(dat))
     
 }
 
@@ -143,15 +142,21 @@ class Home extends Component {
         <Fade bottom>
  <div className='container-fluid '>
 
-   <span className='v1'>Influ<span className='v2'>Rocket</span></span>
-     <Link to='/contact'><button className='btn a2 float-right'>Contact</button></Link>
+<Link to = '/tools'><span className='v1'>Influ<span className='v2'>Rocket</span></span></Link>
+<button className='btn a2 float-right' onClick={() => window.open('https://www.influrocket.com/contact')}>Contact</button>
+<button className='btn a2 float-right' onClick={() => window.open('https://www.influrocket.com/blogs/')}>Blog</button>
+<button className='btn a2 float-right' onClick={() => window.open('https://www.influrocket.com/newsletter')}>Newsletter</button>
+<button className='btn a2 float-right' onClick={() => window.open('https://www.influrocket.com/tools')}>Tools</button>
+<button className='btn a2 float-right' onClick={() => window.open('https://www.influrocket.com/services')}>Services</button>
+<button className='btn a2 float-right' onClick={() => window.open('https://www.influrocket.com')}>Home</button>
+  {/*<Link to='/contact'><button className='btn a2 float-right'>Contact</button></Link>
     <Link to='/blog'><button className='btn a2 float-right'>Blog</button></Link>
 
   <Link to='/newsletter'><button className='btn a2 float-right'>Newsletter</button></Link>
 
   <Link to='/tools'><button className='btn a2 float-right'>Tools</button></Link>
   <Link to='/services'><button className='btn a2 float-right'>Services</button></Link>
-    <Link to='/'><button className='btn a2 float-right'>Home</button></Link>
+  <Link to='https://www.influrocket.com'><button className='btn a2 float-right'>Home</button></Link>*/}
 
 
  </div>

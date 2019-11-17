@@ -5,6 +5,7 @@ import Slide from 'react-reveal/Slide';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import Autosuggest from 'react-autosuggest';
+import InnerTool from './innerTool'
 
 const Niche = [
   {
@@ -51,6 +52,7 @@ const Niche = [
 
 ];
 
+
 const getSuggestions = value => {
   const inputValue = value.trim().toLowerCase();
   const inputLength = inputValue.length;
@@ -59,6 +61,8 @@ const getSuggestions = value => {
     niche.name.toLowerCase().slice(0, inputLength) === inputValue
   );
 };
+var tool_data = {}
+var mytool_data = []
 
 const getSuggestionValue = suggestion => suggestion.name;
 
@@ -68,15 +72,16 @@ const renderSuggestion = suggestion => (
   </div>
 );
 
+
+
 class Tools extends Component {
 
  state = {
    data: [],
-
-
    value: '',
    suggestions: []
  }
+
 
  onChange = (event, { newValue }) => {
    this.setState({
@@ -96,7 +101,12 @@ class Tools extends Component {
     });
   };
 
-
+  buttonClickEvent = (event)=>{
+    this.setState({
+      value : event.target.innerHTML.toLowerCase()
+    })
+    console.log(event.target.innerHTML.toLowerCase());
+  }
 
   onSubmitNiche = () => {
 
@@ -106,9 +116,33 @@ class Tools extends Component {
     .catch(err => console.log(err))
   }
 
+  componentDidMount(){
+    console.log("tool component did mount!!!");
+    console.log(this.state)
+
+    //fetch('http://localhost:5000/')
+    axios.get('3.233.117.183:5000/tool')
+    .then((res)=>{
+      tool_data = res.data;
+      mytool_data = Object.entries(tool_data);
+      this.setState({
+        data : mytool_data
+
+      })
+    })
+      .catch((err)=>console.log(err))
+
+      console.log("tool 2 component did mount!!!");  
+  }
+
+
+
+ 
   render(){
-console.log(this.state.value)
+    console.log(this.state.value)
     const { value, suggestions } = this.state;
+
+
 
     const inputProps = {
         placeholder: '',
@@ -116,11 +150,43 @@ console.log(this.state.value)
         onChange: this.onChange
       };
 
-    console.log(this.state.data)
-    return <div className='container'>
+    console.log("hello "+this.state.data)
+    return(
+      <div>
 
 
-<div className='container c2'>
+      <div className = "categories">
+        <div className = "category" onClick = {this.buttonClickEvent}>Fashion</div>
+        <div className = "category" onClick = {this.buttonClickEvent}>Travel</div>
+        <div className = "category" onClick = {this.buttonClickEvent}>Fitness</div>
+        <div className = "category" onClick = {this.buttonClickEvent}>Art</div>
+        <div className = "category" onClick = {this.buttonClickEvent}>Finance</div>
+        <div className = "category" onClick = {this.buttonClickEvent}>Apparels</div>
+        <div className = "category" onClick = {this.buttonClickEvent}>Accessories</div>
+        <div className = "category" onClick = {this.buttonClickEvent}>Sports</div>
+        <div className = "category" onClick = {this.buttonClickEvent}>Music</div>
+        <div className = "category" onClick = {this.buttonClickEvent}>Shopping</div>
+        <div className = "category" onClick = {this.buttonClickEvent}>Lifestyle</div>
+        <div className = "category" onClick = {this.buttonClickEvent}>Marketing</div>
+      </div>
+
+      <div><InnerTool value = {this.state.value} data = {this.state.data}/></div>
+      </div>
+      
+
+          
+      
+    )
+    
+
+
+      }
+    }
+
+
+
+
+{/*<div className='container c2'>
  <Zoom top>
         <div className='container b13 row justify-content-center'>
           <div className='j1'>
@@ -141,15 +207,16 @@ console.log(this.state.value)
       </div>
 
         <div className='b7'>
-            <div className='b6'>
+          <div className='b6'>
             <button className='b5' onClick = {this.onSubmitNiche}>Find Hashtags</button>
-             </div>
-            </div>
+          </div>
+        </div>  
 
 
+    </div>
+  </Zoom>
 </div>
-</Zoom>
-</div>
+
 
 
  <div className='container b77 text-center row justify-content-center'>
@@ -191,8 +258,8 @@ console.log(this.state.value)
         </Slide>
  </div>
 
+*/}
 
-    </div>
-  }
-}
+
+    
 export default Tools;
