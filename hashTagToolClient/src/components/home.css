@@ -9,8 +9,8 @@
 .a2{
  color:#b0bec5;
  font-weight:lighter;
- margin-left: 30px;
- font-size: 20px;
+ margin-left: 10px;
+ font-size: 18px;
  font-weight: bold;
 
 }
@@ -77,4 +77,8 @@ border-style: solid;
 .s8{
   background-color: white;
   height: 200px;
+}
+
+.jumbotron{
+  margin-bottom: 10px;
 }

@@ -8,6 +8,8 @@ import { CSVLink, CSVDownload } from "react-csv";
 import Autosuggest from 'react-autosuggest';
 import Condition from './condition'
 import axios from 'axios';
+import {Helmet} from "react-helmet";
+
 
 
 import { MdContacts,MdAllInclusive,MdDashboard,MdViewCarousel,MdWbIridescent } from "react-icons/md";
@@ -116,7 +118,7 @@ class Home extends Component {
     console.log(this.state)
 
     //fetch('http://localhost:5000/')
-    axios.get('3.233.117.183:5000/')
+    axios.get('http://3.233.117.183:5000/')
     .then((res)=>
       dat = res.data,
       console.log(dat))
@@ -138,30 +140,16 @@ class Home extends Component {
 
     return <div>
 
- <div className='a1'>
-        <Fade bottom>
- <div className='container-fluid '>
-
-<Link to = '/tools'><span className='v1'>Influ<span className='v2'>Rocket</span></span></Link>
-<button className='btn a2 float-right' onClick={() => window.open('https://www.influrocket.com/contact')}>Contact</button>
-<button className='btn a2 float-right' onClick={() => window.open('https://www.influrocket.com/blogs/')}>Blog</button>
-<button className='btn a2 float-right' onClick={() => window.open('https://www.influrocket.com/newsletter')}>Newsletter</button>
-<button className='btn a2 float-right' onClick={() => window.open('https://www.influrocket.com/tools')}>Tools</button>
-<button className='btn a2 float-right' onClick={() => window.open('https://www.influrocket.com/services')}>Services</button>
-<button className='btn a2 float-right' onClick={() => window.open('https://www.influrocket.com')}>Home</button>
-  {/*<Link to='/contact'><button className='btn a2 float-right'>Contact</button></Link>
-    <Link to='/blog'><button className='btn a2 float-right'>Blog</button></Link>
-
-  <Link to='/newsletter'><button className='btn a2 float-right'>Newsletter</button></Link>
-
-  <Link to='/tools'><button className='btn a2 float-right'>Tools</button></Link>
-  <Link to='/services'><button className='btn a2 float-right'>Services</button></Link>
-  <Link to='https://www.influrocket.com'><button className='btn a2 float-right'>Home</button></Link>*/}
+        <Helmet>
+                <title>Follow-back tool</title>
+                <script type='text/javascript' 
+                src='https://platform-api.sharethis.com/js/sharethis.js#property=5dd8a2ffac13720012fb6056&product=sticky-share-buttons&cms=sop' 
+                async='async'></script>
+        </Helmet>
 
 
- </div>
-  </Fade>
- </div>
+
+
     <div className='container-fluid text-center jumbotron justify-content-center row '>
             <Bounce left>
    <h1 className='  a4'>Instagram Follow-back Tool</h1>
@@ -181,7 +169,7 @@ class Home extends Component {
 
  <Zoom top>
    <div  className='s2'>
-   <h1 className='s1'>Select A Niche(choose from options)</h1>
+   <h1 className='s1'>Type a Niche (like fitness, fashion, business, lifestyle, travel) </h1>
    <div className='d2'>
          <div className='d1'>
    <Autosuggest

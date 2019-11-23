@@ -6,6 +6,10 @@ import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import Autosuggest from 'react-autosuggest';
 import InnerTool from './innerTool'
+import Bounce from 'react-reveal/Bounce';
+import {Helmet} from "react-helmet";
+
+
 
 const Niche = [
   {
@@ -121,7 +125,7 @@ class Tools extends Component {
     console.log(this.state)
 
     //fetch('http://localhost:5000/')
-    axios.get('3.233.117.183:5000/tool')
+    axios.get('http://3.233.117.183:5000/tool')
     .then((res)=>{
       tool_data = res.data;
       mytool_data = Object.entries(tool_data);
@@ -152,29 +156,44 @@ class Tools extends Component {
 
     console.log("hello "+this.state.data)
     return(
-      <div>
+      <div>   
+        <Helmet>
+                <title>Hashtag tool</title>
+                <script type='text/javascript' 
+                src='https://platform-api.sharethis.com/js/sharethis.js#property=5dd8a2ffac13720012fb6056&product=sticky-share-buttons&cms=sop' 
+                async='async'></script>
+        </Helmet>
 
 
-      <div className = "categories">
-        <div className = "category" onClick = {this.buttonClickEvent}>Fashion</div>
-        <div className = "category" onClick = {this.buttonClickEvent}>Travel</div>
-        <div className = "category" onClick = {this.buttonClickEvent}>Fitness</div>
-        <div className = "category" onClick = {this.buttonClickEvent}>Art</div>
-        <div className = "category" onClick = {this.buttonClickEvent}>Finance</div>
-        <div className = "category" onClick = {this.buttonClickEvent}>Apparels</div>
-        <div className = "category" onClick = {this.buttonClickEvent}>Accessories</div>
-        <div className = "category" onClick = {this.buttonClickEvent}>Sports</div>
-        <div className = "category" onClick = {this.buttonClickEvent}>Music</div>
-        <div className = "category" onClick = {this.buttonClickEvent}>Shopping</div>
-        <div className = "category" onClick = {this.buttonClickEvent}>Lifestyle</div>
-        <div className = "category" onClick = {this.buttonClickEvent}>Marketing</div>
-      </div>
 
-      <div><InnerTool value = {this.state.value} data = {this.state.data}/></div>
-      </div>
-      
 
-          
+        <div className='container-fluid text-center jumbotron justify-content-center row '>
+          <Bounce left>
+            <h1 className='  a4'>Instagram Hashtag Tool</h1>
+          </Bounce>
+          <Bounce left>
+            <h6 className='text-center a5'>Hashtags Most Used By Top Micro Influencers</h6>
+          </Bounce>
+        </div>
+
+
+        <div className = "categories">
+          <div className = "category" onClick = {this.buttonClickEvent}>Fashion</div>
+          <div className = "category" onClick = {this.buttonClickEvent}>Travel</div>
+          <div className = "category" onClick = {this.buttonClickEvent}>Fitness</div>
+          <div className = "category" onClick = {this.buttonClickEvent}>Art</div>
+          <div className = "category" onClick = {this.buttonClickEvent}>Finance</div>
+          <div className = "category" onClick = {this.buttonClickEvent}>Apparels</div>
+          <div className = "category" onClick = {this.buttonClickEvent}>Accessories</div>
+          <div className = "category" onClick = {this.buttonClickEvent}>Sports</div>
+          <div className = "category" onClick = {this.buttonClickEvent}>Music</div>
+          <div className = "category" onClick = {this.buttonClickEvent}>Shopping</div>
+          <div className = "category" onClick = {this.buttonClickEvent}>Lifestyle</div>
+          <div className = "category" onClick = {this.buttonClickEvent}>Marketing</div>
+        </div>
+
+        <div><InnerTool value = {this.state.value} data = {this.state.data}/></div>
+      </div>    
       
     )
     
