@@ -48,7 +48,12 @@ class Hashtag extends Component{
                             {this.state.m}
                         </div>
                         <button className = "copy-btn" style = {{backgroundColor:this.state.m_color}} onClick={() => {
-                            navigator.clipboard.writeText(this.state.m);
+                                const textField = document.createElement('textarea');
+                                textField.innerText = this.state.m;
+                                document.body.appendChild(textField);
+                                textField.select();
+                                document.execCommand('copy');
+                                textField.remove();
                             this.setState({
                                 ...this.state,
                                 m_color:'#3cd43c',
@@ -69,7 +74,12 @@ class Hashtag extends Component{
                             {this.state.o}
                         </div>
                         <button className = "copy-btn"  style = {{backgroundColor:this.state.o_color}} onClick={() => {
-                            navigator.clipboard.writeText(this.state.o);
+                                const textField = document.createElement('textarea');
+                                textField.innerText = this.state.o;
+                                document.body.appendChild(textField);
+                                textField.select();
+                                document.execCommand('copy');
+                                textField.remove();
                             this.setState({
                                 ...this.state,
                                 m_color:'#428bca',
@@ -85,11 +95,16 @@ class Hashtag extends Component{
                         <div className = "col-head">
                             Rarely Used  
                         </div>
-                        <div className = "hash-most">
+                        <div className = "hash-most" >
                             {this.state.r}
                         </div>
                         <button className = "copy-btn" style = {{backgroundColor:this.state.r_color}} onClick={() => {
-                            navigator.clipboard.writeText(this.state.r);
+                                const textField = document.createElement('textarea');
+                                textField.innerText = this.state.r;
+                                document.body.appendChild(textField);
+                                textField.select();
+                                document.execCommand('copy');
+                                textField.remove();
                             this.setState({
                                 ...this.state,
                                 m_color:'#428bca',
