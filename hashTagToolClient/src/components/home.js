@@ -16,38 +16,31 @@ import { MdContacts,MdAllInclusive,MdDashboard,MdViewCarousel,MdWbIridescent } f
 
 
 const username = [
-  {
-   name: 'animal lover',
-
-  },
-  {
-   name: 'business',
-  },
-  {
-   name: 'fashion',
-  },
-  {
-   name: 'food',
-  },
-  {
-   name: 'fitness',
-  },
-
-  {
-   name: 'lifestyle',
-  },
-  {
-   name: 'painting',
-  },
-  {
-   name: 'pets',
-  },
-  {
-   name: 'shopping',
-  },
-  {
-   name: 'travel',
-  },
+{ name: 'art',},
+{ name: 'adventure',},
+{ name: 'travel',},
+{ name: 'lifestyle',},
+{ name: 'nature',},
+{ name: 'fashion',},
+{ name: 'startup',},
+{ name: 'beach',},
+{ name: 'health',},
+{ name: 'quotes',},
+{ name: 'home',},
+{ name: 'trip',},
+{ name: 'music',},
+{ name: 'fitness',},
+{ name: 'business',},
+{ name: 'finance',},
+{ name: 'design',},
+{ name: 'craft',},
+{ name: 'baby',},
+{ name: 'marketing',},
+{ name: 'animal lover',},
+{ name: 'food',},
+{ name: 'painting',},
+{ name: 'pets',},
+{ name: 'shopping',}
 
 ]
 
@@ -117,7 +110,7 @@ class Home extends Component {
     console.log("component did mount!!!");
     console.log(this.state)
 
-    //fetch('http://localhost:5000/')
+    //axios('http://localhost:5000/')
     axios.get('http://3.233.117.183:5000/')
     .then((res)=>
       dat = res.data,
@@ -150,50 +143,46 @@ class Home extends Component {
 
 
 
-    <div className='container-fluid text-center jumbotron justify-content-center row '>
-            <Bounce left>
+    <div className=' text-center jumbotron justify-content-center row '>
+    <Bounce left>
    <h1 className='  a4'>Instagram Follow-back Tool</h1>
-           </Bounce>
+    </Bounce>
 
-                     <Bounce left>
+  <Bounce left>
    <h6 className='text-center a5'>Get Up To 50 Accounts With 80% follow-back potential</h6>
 
 
-   <div className='container row justify-content-center s8'>
-    <Zoom top>
-   <div className='s2'>
-   <h1 className='s1 s4'>Your IG Account Name</h1>
-<input  className='s3' placeholder='Type IG account name'/>
-   </div>
-    </Zoom>
+      <div className='container row justify-content-center aligner s8'>
+        <Zoom top>
+          <div className='s2'>
+          <h1 className='s1 s4'>Your IG Account Name</h1>
+            <input  className='s3' placeholder='Type IG account name'/>
+          </div>
+        </Zoom>
 
- <Zoom top>
-   <div  className='s2'>
-   <h1 className='s1'>Type a Niche (like fitness, fashion, business, lifestyle, travel) </h1>
-   <div className='d2'>
-         <div className='d1'>
-   <Autosuggest
-        suggestions={suggestions}
-        onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
-        onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-        getSuggestionValue={getSuggestionValue}
-        renderSuggestion={renderSuggestion}
-        inputProps={inputProps}
-      />
+        <Zoom top>
+          <div  className='s2'>
+            <h1 className='s1'>Type a Niche (like fitness, fashion, business, lifestyle, travel)* </h1>
+            <div className='s2'>
+                <div className='s3'>
+                  <Autosuggest
+                      suggestions={suggestions}
+                      onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+                      onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+                      getSuggestionValue={getSuggestionValue}
+                      renderSuggestion={renderSuggestion}
+                      inputProps={inputProps}  
+                    />
+                </div>
+            </div>
+          </div>
+        </Zoom>
+        <Zoom top>
+          <div className='s2' >
+            <Condition Value = {neededValue} data = {dat}/>
+          </div>
+        </Zoom>
       </div>
- </div>
-   </div>
-    </Zoom>
-     <Zoom top>
-      <div className='s2' >
-        <Condition Value = {neededValue} data = {dat}/>
-   </div>
-
-
-   
-   
- </Zoom>
-  </div>
   </Bounce>
   </div>
   </div>

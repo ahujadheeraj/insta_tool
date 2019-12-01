@@ -1,3 +1,8 @@
+body{
+  overflow-x: hidden;
+}
+
+
 .a1{
   height: 70px;
   /* background-color: #ff5722; */
@@ -44,10 +49,9 @@ font-size: 40px;
 }
 .s2{
   height: 100px;
-  width: 300px;
-
-
-  margin: 30px;
+  width: 320px;
+  margin: 0px;
+  margin-left: 20px;
 }
 .s3{
   height: 70px;
@@ -55,7 +59,8 @@ font-size: 40px;
   border-color: black;
   border-width: 3;
   border-style: solid;
-  font-size: 30px
+  font-size: 30px;
+  margin: auto;
 }
 .s4{
 margin-bottom: 32px;
@@ -80,5 +85,15 @@ border-style: solid;
 }
 
 .jumbotron{
+  margin-top:0px;
   margin-bottom: 10px;
+  padding-top:0px;
+  height: 320px;
+}
+
+.aligner{
+display: flex;
+align-items: flex-start;
+padding-top: 40px;
+
 }

@@ -12,7 +12,7 @@ import Navbar from './components/pages/navbar'
 import { BrowserRouter,Route } from 'react-router-dom';
 
 ReactDOM.render(
-    <div>
+    <div >
     <BrowserRouter>
         <div>
         <Navbar />
@@ -20,6 +20,7 @@ ReactDOM.render(
         <Route exact path='/' component={App} />
         <Route exact path='/followback' component={App} />
         <Route exact path='/hashtag' component={Tools} />
+
 
               {/* 
 

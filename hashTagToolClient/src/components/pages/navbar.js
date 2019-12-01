@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
+import Logo from '../../img/logo.jpg'
 
 
 import { Link } from 'react-router-dom'
@@ -12,7 +13,7 @@ class Navbar extends Component{
             <Fade bottom>
             <div className='container-fluid '>
 
-            <Link to = '/'><span className='v1'>Influ<span className='v2'>Rocket</span></span></Link>
+            <Link to = '/'><img src = {Logo} alt = "influrocket" style = {{height:"inherit",width:"230px"}}></img></Link>
 
             <button className='btn a2 float-right' onClick={() => window.open('https://www.influrocket.com/contact')}>Contact</button>
             <button className='btn a2 float-right' onClick={() => window.open('https://www.influrocket.com/blogs/')}>Blog</button>
