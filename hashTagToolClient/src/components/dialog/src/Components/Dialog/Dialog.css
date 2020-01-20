@@ -1,0 +1,101 @@
+/* .closebtn {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+  z-index: 2;
+} */
+a {
+  text-decoration: none;
+}
+.formcard {
+  max-width: 50vw;
+}
+.uppercard {
+  background: #02438a;
+  color: white;
+  padding-top: 1rem;
+}
+.innercontent {
+  padding: 1rem 8rem 0.1rem 8rem;
+  font-weight: 600;
+}
+
+.lowertext {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  word-spacing: 0.4px;
+}
+.uppertext {
+  font-size: 1.2rem;
+}
+.lowerpart {
+  text-align: center;
+}
+.continue {
+  color: yellow;
+  background: #fa8800;
+  padding: 0.7rem 7.5rem;
+  border: none;
+  border-radius: 0.2rem;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+.inputemail {
+  border-color: #ffa537;
+  padding: 0.7rem;
+  margin: 1rem 0;
+  border-radius: 0.2rem;
+  border-style: solid;
+}
+
+.terms {
+  text-align: start;
+  margin-left: 6.6rem;
+}
+
+@media (max-width: 1100px) {
+  .formcard {
+    max-width: 60vw;
+  }
+  .innercontent {
+    padding: 1rem 3rem 0.1rem 3rem;
+  }
+
+  .uppertext {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 900px) {
+  .formcard {
+    max-width: 70vw;
+  }
+  .innercontent {
+    padding: 1rem 5rem 0.1rem 5rem;
+  }
+  .lowertext {
+    font-size: 0.7rem;
+  }
+  .uppertext {
+    font-size: 1rem;
+  }
+  .continue {
+    padding: 0.4rem 5rem;
+  }
+}
+@media (max-width: 600px) {
+  .formcard {
+    max-width: 80vw;
+  }
+  .innercontent {
+    padding: 1rem 4rem 0.1rem 4rem;
+  }
+}

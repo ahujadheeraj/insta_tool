@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import './hashtag.css'
-import { MdBluetooth } from 'react-icons/md';
+// import { MdBluetooth } from 'react-icons/md';
 
 class Hashtag extends Component{
     state = {

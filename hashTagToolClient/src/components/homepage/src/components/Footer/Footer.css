@@ -1,0 +1,16 @@
+.list-title {
+	font-size: .8rem;
+	font-weight: bolder;
+}
+
+.footer-list li a {
+	color: white;
+}
+
+.footer-list li {
+	font-size: .9rem;
+}
+
+.footer-list li a:hover {
+	color: #ff486a;
+}

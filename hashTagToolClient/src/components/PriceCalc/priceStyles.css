@@ -1,0 +1,74 @@
+#my-input-group
+{
+    display: flex;
+    flex-direction: row
+}
+
+#my-input-group-category
+{
+    flex-grow: 6;
+}
+
+#my-input-group-country
+{
+    flex-grow: 2;
+}
+
+#my-input-group-language
+{
+    flex-grow: 2;
+}
+
+#tool-guide > li
+{
+    margin-top: 10px;
+}
+
+#tool-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+#price-result-container
+{
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 38, 38);
+}
+
+#price-box
+{
+    color: white;
+}
+
+#price-range
+{
+    text-align: center;
+}
+
+#sliders-options-box
+{
+    flex-grow: 7;
+    background-color: rgb(236, 234, 234);
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.slider-title
+{
+    margin-top: 10px;
+    font-weight: 800;
+}
+
+.slider-container
+{
+    padding-top: 40px;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 30px;
+}

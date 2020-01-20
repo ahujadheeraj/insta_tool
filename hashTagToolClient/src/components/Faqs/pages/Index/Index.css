@@ -1,0 +1,80 @@
+section {
+	margin: 70px 0px;
+}
+
+.index{
+	overflow: 'hidden';
+	margin-top:50px
+}
+
+.heading {
+	font-weight: bold;
+}
+
+#features {
+	display: flex;
+	align-items: center;
+	margin-top: -15rem;
+}
+
+.feature-heading {
+	color: #ff486a;
+}
+
+.features-wrapper {
+	margin: 18rem 0px 8rem 0px;
+}
+
+#demo {
+}
+
+video {
+	width: 100%;
+}
+
+.pricing {
+}
+
+.install-wrapper {
+	margin: 15rem 0px 10rem 0px;
+}
+
+.plan-container {
+	border-radius: 10px;
+}
+
+.plan {
+	text-decoration: none;
+	list-style: none;
+	text-align: left;
+}
+
+.review {
+	border-radius: 10px;
+}
+
+.review-qoute {
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1900px) {
+	#features {
+		margin-top: -18rem;
+	}
+
+	.features-wrapper {
+		margin: 17rem 0px;
+	}
+
+	.install-wrapper {
+		margin: 22rem 0px 15rem 0px;
+	}
+}
+
+@media (max-width: 400px) {
+	.index{
+		margin-top: 00px;
+	}
+}

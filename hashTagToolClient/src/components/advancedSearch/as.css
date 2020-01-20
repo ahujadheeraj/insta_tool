@@ -1,0 +1,34 @@
+.adv{
+    background-color: rgba(240, 248, 255, 0.13);
+    padding-top:40px;
+}
+
+.searchbox{
+    text-align: center;
+    margin: 50px 0;
+}
+
+
+
+.searchField *{
+    height: 40px;
+    border: 0px;
+    border-top :3px solid orange;
+    border-bottom: 3px solid orange;
+    padding:2px 13px;
+    outline:none;
+    
+
+}
+
+.searchField input[type=text]{
+    width:250px;
+    border-left: 3px solid orange;
+    margin-left: 250px;
+}
+.searchField button{
+    border: 0;
+    background-color: orange;
+    color: white;
+    border-top: 1px solid orange;
+}

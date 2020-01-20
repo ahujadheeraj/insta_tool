@@ -1,0 +1,18 @@
+#tools-belt
+{
+    border: 2px solid black;
+}
+
+#side-bar
+{
+    background-color: dodgerblue;
+    width: auto;
+    height: 200px;
+}
+
+#edit
+{
+    background-color: rgb(180, 180, 180);
+    width: auto;
+    height: 200px;
+}

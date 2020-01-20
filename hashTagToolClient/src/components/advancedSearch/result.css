@@ -1,0 +1,57 @@
+.result{
+    background-color:aliceblue;
+    text-align: center;
+}
+
+.result-head{
+    font-weight: 700;
+    padding:30px 0;
+}
+
+.result-foot-button{
+    background-color:rgb(255, 103, 135);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding:20px 10px 10px ;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 40px 0;
+}
+
+.result-mid{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding:0 140px;
+}
+
+.in-profile{
+    padding:50px 40px;
+}
+
+.in-profile img{
+    border-radius: 50%;
+    width: 80%;
+}
+
+.in-name{
+    color: lightslategrey;
+    padding-top:20px;
+
+}
+
+.in-id{
+    font-size: 13px;
+    font-weight: 800;
+    color:rgba(0,0,0, 0.6)
+
+}
+
+.in-follow{
+
+    font-size: 11px;
+    font-weight: 800;
+    color:rgb(30, 172, 30)
+
+}

@@ -1,0 +1,35 @@
+.form-container {
+	transform: skewY(4.5deg);
+	margin-top: -10px;
+	background-color: white;
+}
+
+.form-inner-container {
+	transform: skewY(-9deg);
+	margin-top: -5px;
+	background-color: white;
+	padding: 0px 300px;
+}
+
+.myform {
+	transform: skewY(4.5deg);
+}
+
+.faq-text {
+	color: blue;
+	cursor: pointer;
+}
+
+.faq-questions {
+	display: none;
+}
+
+@media (max-width: 1060px) {
+	.form-inner-container {
+		padding: 0;
+	}
+
+	#radio {
+		margin-left: 160px !important;
+	}
+}

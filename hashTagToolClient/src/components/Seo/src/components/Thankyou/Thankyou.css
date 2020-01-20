@@ -1,0 +1,69 @@
+.thankyou {
+  width: 100%;
+  padding: 48px 3.75%;
+  display: grid;
+  grid-gap: 0;
+}
+.centered {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.thankyou div {
+  background: #fff;
+  border: 1px solid #cccccc;
+  position: relative;
+  padding: 48px;
+  z-index: 0;
+  width: 600px;
+}
+/* .thankyou div ::after {
+  background: #cccccc;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 12px;
+  left: -12px;
+  z-index: -1;
+} */
+
+.thankyou p {
+  font: 16px/24px;
+  color: black;
+  opacity: 0.7;
+  padding: 0 0 24px;
+}
+.thankyou h1 {
+  font-size: 1.7rem;
+  font-weight: 550;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-container {
+  display: inline-block;
+  position: relative;
+  background: black;
+  color: #fff;
+  border: none;
+  min-height: 48px;
+  width: auto;
+  margin: 0;
+  padding: 12px 24px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .thankyou div {
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .thankyou div {
+    width: 380px;
+  }
+}
